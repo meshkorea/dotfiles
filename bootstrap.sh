@@ -46,17 +46,9 @@ brew install tree
 brew install watch
 brew install wget
 brew install yarn
-brew install youtube-dl
 brew install openapi-generator
 brew install aws-iam-authenticator
-brew install speedtest-cli
 brew install colordiff
-
-brew install composer
-brew install phpunit
-
-brew install ruby
-brew install rbenv
 
 brew install gradle
 brew install maven
@@ -72,10 +64,8 @@ brew cask install google-backup-and-sync
 brew cask install intellij-idea
 brew cask install iterm2
 brew cask install postman
-brew cask install obs
 brew cask install slack
 brew cask install sublime-text
-brew cask install wireshark
 brew cask install font-source-code-pro
 
 #-------------------------------------------------------------------------------
@@ -84,8 +74,8 @@ brew cask install font-source-code-pro
 
 ln -nfs $DOTFILES/.gitconfig $HOME/.gitconfig
 git config --global core.excludesfile $DOTFILES/.gitignore_global
-git config --global user.name "appkr"
-git config --global user.email "juwonkim@me.com"
+git config --global user.name "seungholee81"
+git config --global user.email "seungho.lee@meshkorea.net"
 
 #-------------------------------------------------------------------------------
 # Make ZSH the default shell environment
@@ -120,32 +110,11 @@ mkdir $HOME/.vim/colors
 wget https://raw.githubusercontent.com/gosukiwi/vim-atom-dark/master/colors/atom-dark-256.vim -O $HOME/.vim/colors/atom-dark-256.vim
 
 #-------------------------------------------------------------------------------
-# Install global PHP tools
-#-------------------------------------------------------------------------------
-
-composer global require \
-    laravel/installer \
-    psy/psysh:@stable \
-    guzzlehttp/guzzle \
-    illuminate/support \
-    nesbot/carbon \
-    ramsey/uuid
-
-mkdir $HOME/.config/psysh
-ln -nfs $DOTFILES/psysh/config.php $HOME/.config/psysh/config.php
-
-#-------------------------------------------------------------------------------
 # Install global JavaScript tools
 #-------------------------------------------------------------------------------
 
 npm config set prefix $HOME/npm
 yarn global add redoc
-
-#-------------------------------------------------------------------------------
-# Install Rails & Jekyll
-#-------------------------------------------------------------------------------
-
-gem install pry rails jekyll bundler
 
 #-------------------------------------------------------------------------------
 # Install jshell
@@ -182,4 +151,3 @@ if [[ ! -d $HOME/Library/KeyBindings ]]; then
 fi
 cp $DOTFILES/mac/DefaultkeyBinding.dict $HOME/Library/KeyBindings/
 
-source $DOTFILES/.osx

@@ -3,16 +3,16 @@
 #-------------------------------------------------------------------------------
 
 [core]
-	user = appkr
-	email = juwonkim@me.com
+	user = seungholee81
+	email = seungho.lee@meshkorea.net
 	editor = vim
-	excludesfile = /Users/appkr/dotfiles/.gitignore_global
+	excludesfile = /Users/seungho.lee/dotfiles/.gitignore_global
 	precomposeunicode = true
 	quotepath = false
 
 [alias]
 	logall = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=relative
-	mylog = log --decorate --pretty=oneline --abbrev-commit --date=relative
+	logs = log --decorate --pretty=oneline --abbrev-commit --date=relative
 	alias = config --get-regexp ^alias\\.
 
 [color]
@@ -29,8 +29,9 @@
 	default = simple
 
 [user]
-	name = appkr
-	email = juwonkim@me.com
+	user = seungholee81
+	email = seungho.lee@meshkorea.net
+	name = seungholee81
 
 [filter "lfs"]
 	required = true
